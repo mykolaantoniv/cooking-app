@@ -1,12 +1,14 @@
 import { RecipeMatch } from "../types";
 import { Link } from "react-router-dom";
 import { Clock, Flame } from "lucide-react";
+import { useLanguage } from "../hooks/LanguageContext";
 
 interface RecipeCardProps {
   recipe: RecipeMatch;
 }
 
 export const RecipeCard = ({ recipe }: RecipeCardProps) => {
+  const { t } = useLanguage();
   const matchPercentage = Math.round(
     (recipe.matchCount /
       (recipe.matchCount + recipe.missingCount)) *
@@ -14,10 +16,10 @@ export const RecipeCard = ({ recipe }: RecipeCardProps) => {
   );
 
   const getMatchQuality = (percentage: number) => {
-    if (percentage >= 80) return "🔥 Perfect";
-    if (percentage >= 60) return "✅ Good";
-    if (percentage >= 40) return "⚠️ Fair";
-    return "❓ Low";
+    if (percentage >= 80) return t.perfect;
+    if (percentage >= 60) return t.good;
+    if (percentage >= 40) return t.fair;
+    return t.low;
   };
 
   return (
@@ -65,9 +67,9 @@ export const RecipeCard = ({ recipe }: RecipeCardProps) => {
         <div className="p-3">
           <div className="flex items-center justify-between mb-2">
             <div className="flex items-center gap-3 text-xs font-semibold">
-              <span className="text-primary">{recipe.calories} kcal</span>
+              <span className="text-primary">{recipe.calories} {t.kcal}</span>
               <span className="text-muted-foreground">
-                P {recipe.protein} · F {recipe.fat} · C {recipe.carbs}
+                {t.protein_short} {recipe.protein} · {t.fat_short} {recipe.fat} · {t.carbs_short} {recipe.carbs}
               </span>
             </div>
           </div>
@@ -75,7 +77,7 @@ export const RecipeCard = ({ recipe }: RecipeCardProps) => {
           <div className="flex items-center gap-4 text-xs text-muted-foreground mb-2">
             <div className="flex items-center gap-1">
               <Clock className="w-3 h-3" />
-              <span>{recipe.cookTime} min</span>
+              <span>{recipe.cookTime} {t.minutes}</span>
             </div>
             <div className="flex items-center gap-1">
               <Flame className="w-3 h-3" />

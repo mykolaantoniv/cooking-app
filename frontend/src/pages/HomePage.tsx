@@ -4,8 +4,10 @@ import { Recipe, Ingredient, RecipeMatch, MealType } from "../types";
 import { IngredientSelector } from "../components/IngredientSelector";
 import { RecipeCard } from "../components/RecipeCard";
 import { AlertCircle } from "lucide-react";
+import { useLanguage } from "../hooks/LanguageContext";
 
 export const HomePage = () => {
+  const { t } = useLanguage();
   const [mealType, setMealType] = useState<MealType>("breakfast");
   const [availableIngredients, setAvailableIngredients] = useState<Ingredient[]>(
     []
@@ -28,11 +30,11 @@ export const HomePage = () => {
         });
         setAvailableIngredients(Array.from(ings.values()));
       } catch (err) {
-        setError("Failed to load ingredients");
+        setError(t.failed_to_load_ingredients);
       }
     };
     loadIngredients();
-  }, [mealType]);
+  }, [mealType, t];
 
   const toggleIngredient = (name: string) => {
     setSelectedIngredients((prev) =>
@@ -42,7 +44,7 @@ export const HomePage = () => {
 
   const handleFindRecipes = async () => {
     if (selectedIngredients.length === 0) {
-      setError("Please select at least one ingredient");
+      setError(t.select_at_least_one);
       return;
     }
 
@@ -55,9 +57,31 @@ export const HomePage = () => {
       });
       setMatches(results);
     } catch (err) {
-      setError("Failed to find recipes");
+      setError(t.failed_to_find_recipes);
     } finally {
       setLoading(false);
+    }
+  };
+
+  const getMealTypeEmoji = (type: MealType) => {
+    switch (type) {
+      case "breakfast":
+        return "🌅";
+      case "lunch":
+        return "☀️";
+      case "dinner":
+        return "🌙";
+    }
+  };
+
+  const getMealTypeLabel = (type: MealType) => {
+    switch (type) {
+      case "breakfast":
+        return t.breakfast;
+      case "lunch":
+        return t.lunch;
+      case "dinner":
+        return t.dinner;
     }
   };
 
@@ -66,17 +90,17 @@ export const HomePage = () => {
       {/* Header */}
       <div>
         <h1 className="text-2xl font-extrabold text-foreground mb-1">
-          What's cooking?
+          {t.whats_cooking}
         </h1>
         <p className="text-sm text-muted-foreground">
-          Select your meal type and available ingredients
+          {t.select_meal_and_ingredients}
         </p>
       </div>
 
       {/* Meal Type Selector */}
       <div>
         <label className="block text-xs font-bold text-muted-foreground mb-2 uppercase tracking-wide">
-          Select Meal
+          {t.select_meal}
         </label>
         <div className="grid grid-cols-3 gap-2">
           {(["breakfast", "lunch", "dinner"] as MealType[]).map((type) => (
@@ -93,9 +117,8 @@ export const HomePage = () => {
                   : "glass-card text-muted-foreground hover:text-foreground"
               }`}
             >
-              {type === "breakfast" && "🌅"}
-              {type === "lunch" && "☀️"}
-              {type === "dinner" && "🌙"}
+              {getMealTypeEmoji(type)}
+              <div className="text-xs mt-1">{getMealTypeLabel(type)}</div>
             </button>
           ))}
         </div>
@@ -129,12 +152,12 @@ export const HomePage = () => {
         {loading ? (
           <>
             <span className="animate-spin">⏳</span>
-            Finding recipes...
+            {t.loading}
           </>
         ) : (
           <>
             <span>🍽️</span>
-            Find Recipes
+            {t.find_recipes}
           </>
         )}
       </button>

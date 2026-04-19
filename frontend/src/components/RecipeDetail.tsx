@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Recipe } from "../types";
 import { useShopping } from "../hooks/ShoppingContext";
+import { useLanguage } from "../hooks/LanguageContext";
 import { Clock, Flame, ShoppingCart, Check } from "lucide-react";
 
 interface RecipeDetailProps {
@@ -10,6 +11,7 @@ interface RecipeDetailProps {
 export const RecipeDetail = ({ recipe }: RecipeDetailProps) => {
   const [showSuccess, setShowSuccess] = useState(false);
   const shopping = useShopping();
+  const { t } = useLanguage();
 
   const handleAddToShopping = () => {
     const shoppingItems = recipe.ingredients.map((ing, idx) => ({
@@ -47,13 +49,13 @@ export const RecipeDetail = ({ recipe }: RecipeDetailProps) => {
         </h1>
 
         <p className="text-lg font-extrabold text-primary mb-2">
-          {recipe.calories} kcal
+          {recipe.calories} {t.kcal}
         </p>
 
         <div className="flex items-center gap-4 text-sm text-muted-foreground mb-6">
           <div className="flex items-center gap-1.5">
             <Clock className="w-4 h-4" />
-            <span>{recipe.cookTime} min</span>
+            <span>{recipe.cookTime} {t.minutes}</span>
           </div>
           <div className="flex items-center gap-1.5">
             <Flame className="w-4 h-4" />
@@ -64,9 +66,9 @@ export const RecipeDetail = ({ recipe }: RecipeDetailProps) => {
         {/* Macros Grid */}
         <div className="grid grid-cols-3 gap-3 mb-6">
           {[
-            { label: "Protein", value: `${recipe.protein}g`, color: "text-info" },
-            { label: "Fat", value: `${recipe.fat}g`, color: "text-warning" },
-            { label: "Carbs", value: `${recipe.carbs}g`, color: "text-primary" },
+            { label: t.protein, value: `${recipe.protein}g`, color: "text-info" },
+            { label: t.fat, value: `${recipe.fat}g`, color: "text-warning" },
+            { label: t.carbs, value: `${recipe.carbs}g`, color: "text-primary" },
           ].map((m) => (
             <div key={m.label} className="glass-card p-3 text-center">
               <p className={`text-lg font-extrabold ${m.color}`}>{m.value}</p>
@@ -78,7 +80,7 @@ export const RecipeDetail = ({ recipe }: RecipeDetailProps) => {
         {/* Ingredients */}
         <div className="mb-6">
           <h2 className="text-lg font-bold text-foreground mb-3">
-            Ingredients
+            {t.ingredients}
           </h2>
           <div className="glass-card p-4 space-y-3">
             {recipe.ingredients.map((ing, idx) => (
@@ -98,7 +100,7 @@ export const RecipeDetail = ({ recipe }: RecipeDetailProps) => {
         {/* Steps */}
         <div className="mb-6">
           <h2 className="text-lg font-bold text-foreground mb-3">
-            Instructions
+            {t.steps}
           </h2>
           <div className="space-y-3">
             {recipe.steps.map((step, idx) => (
@@ -126,12 +128,12 @@ export const RecipeDetail = ({ recipe }: RecipeDetailProps) => {
               {showSuccess ? (
                 <>
                   <Check className="w-5 h-5" />
-                  Added to Shopping!
+                  {t.added_to_shopping}
                 </>
               ) : (
                 <>
                   <ShoppingCart className="w-5 h-5" />
-                  Add to Shopping List
+                  {t.add_to_shopping}
                 </>
               )}
             </button>
