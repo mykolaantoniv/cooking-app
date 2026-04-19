@@ -2,6 +2,7 @@
   {
     "id": "recipe-001",
     "title": "Buttermilk Pancakes",
+    "image": "/images/recipes/syrniky.jpg",
     "mealType": "breakfast",
     "cookTime": 20,
     "calories": 280,
@@ -27,6 +28,7 @@
   {
     "id": "recipe-002",
     "title": "Simple Omelette",
+    "image": "/images/recipes/omlet.jpg",
     "mealType": "breakfast",
     "cookTime": 10,
     "calories": 200,
@@ -49,6 +51,7 @@
   },
   {
     "id": "recipe-003",
+    "image": "/images/recipes/chicken-salad.jpg",
     "title": "Greek Salad",
     "mealType": "lunch",
     "cookTime": 10,
@@ -73,6 +76,7 @@
     ]
   },
   {
+    "image": "/images/recipes/turkey-cutlets.jpg",
     "id": "recipe-004",
     "title": "Grilled Chicken Breast",
     "mealType": "lunch",
@@ -96,6 +100,7 @@
     ]
   },
   {
+    "image": "/images/recipes/carbonara.jpg",
     "id": "recipe-005",
     "title": "Pasta Carbonara",
     "mealType": "lunch",
@@ -122,6 +127,7 @@
     ]
   },
   {
+    "image": "/images/recipes/fish-veggies.jpg",
     "id": "recipe-006",
     "title": "Vegetable Stir-Fry",
     "mealType": "dinner",
@@ -147,6 +153,7 @@
     ]
   },
   {
+    "image": "/images/recipes/fish-veggies.jpg",
     "id": "recipe-007",
     "title": "Salmon with Lemon",
     "mealType": "dinner",
@@ -172,6 +179,7 @@
     ]
   },
   {
+    "image": "/images/recipes/beef-buckwheat.jpg",
     "id": "recipe-008",
     "title": "Beef Tacos",
     "mealType": "dinner",
@@ -197,6 +205,7 @@
     ]
   },
   {
+    "image": "/images/recipes/tagliatelle.jpg",
     "id": "recipe-009",
     "title": "Mushroom Risotto",
     "mealType": "dinner",
@@ -225,6 +234,7 @@
     ]
   },
   {
+    "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400&h=300&fit=crop",
     "id": "recipe-010",
     "title": "Caesar Salad",
     "mealType": "lunch",
@@ -248,6 +258,7 @@
     ]
   },
   {
+    "image": "https://images.unsplash.com/photo-1547592166-7aae4d755744?w=400&h=300&fit=crop",
     "id": "recipe-011",
     "title": "Vegetable Soup",
     "mealType": "lunch",
@@ -274,6 +285,7 @@
     ]
   },
   {
+    "image": "https://images.unsplash.com/photo-1541519227354-08fa5d50c44d?w=400&h=300&fit=crop",
     "id": "recipe-012",
     "title": "Scrambled Eggs with Toast",
     "mealType": "breakfast",
@@ -298,6 +310,7 @@
     ]
   },
   {
+    "image": "https://images.unsplash.com/photo-1455619452474-d2be8b1e4e31?w=400&h=300&fit=crop",
     "id": "recipe-013",
     "title": "Chicken Curry",
     "mealType": "dinner",
@@ -324,6 +337,7 @@
     ]
   },
   {
+    "image": "/images/recipes/oatmeal.jpg",
     "id": "recipe-014",
     "title": "Fruit Smoothie",
     "mealType": "breakfast",
@@ -346,6 +360,7 @@
     ]
   },
   {
+    "image": "/images/recipes/bolognese.jpg",
     "id": "recipe-015",
     "title": "Beef Bolognese",
     "mealType": "dinner",

@@ -24,16 +24,12 @@ export const RecipeDetail = ({ recipe }: RecipeDetailProps) => {
     setTimeout(() => setShowSuccess(false), 2000);
   };
 
-  const imageUrl = `https://images.unsplash.com/photo-${
-    Math.abs(recipe.id.charCodeAt(0)) % 100 + 1600000000000
-  }?w=600&h=400&fit=crop`;
-
   return (
     <div className="space-y-6 pb-24">
       {/* Hero Image */}
       <div className="relative -mx-4 -mt-6">
         <img
-          src={imageUrl}
+          src={recipe.image}
           alt={recipe.title}
           className="w-full aspect-[16/10] object-cover"
           onError={(e) => {

@@ -9,6 +9,7 @@ export interface Ingredient {
 export interface Recipe {
   id: string;
   title: string;
+  image: string;
   mealType: MealType;
   cookTime: number; // in minutes
   calories: number;

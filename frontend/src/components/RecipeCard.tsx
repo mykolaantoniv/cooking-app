@@ -20,18 +20,13 @@ export const RecipeCard = ({ recipe }: RecipeCardProps) => {
     return "❓ Low";
   };
 
-  // Use a placeholder image or gradient
-  const imageUrl = `https://images.unsplash.com/photo-${
-    Math.abs(recipe.id.charCodeAt(0)) % 100 + 1600000000000
-  }?w=400&h=250&fit=crop`;
-
   return (
     <Link to={`/recipe/${recipe.id}`}>
       <button className="glass-card overflow-hidden text-left w-full animate-fade-in transition-transform active:scale-[0.98] hover:shadow-lg">
         {/* Image Section */}
         <div className="relative aspect-[16/10] overflow-hidden">
           <img
-            src={imageUrl}
+            src={recipe.image}
             alt={recipe.title}
             className="w-full h-full object-cover"
             loading="lazy"

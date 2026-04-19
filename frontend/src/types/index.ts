@@ -9,6 +9,7 @@ export interface Ingredient {
 export interface Recipe {
   id: string;
   title: string;
+  image: string;
   mealType: MealType;
   cookTime: number;
   calories: number;
@@ -22,6 +23,7 @@ export interface Recipe {
 export interface RecipeMatch {
   id: string;
   title: string;
+  image: string;
   mealType: MealType;
   cookTime: number;
   calories: number;

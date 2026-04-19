@@ -70,6 +70,7 @@ router.post("/match", (req: Request, res: Response) => {
       recipes: matches.map((m) => ({
         id: m.recipe.id,
         title: m.recipe.title,
+        image: m.recipe.image,
         mealType: m.recipe.mealType,
         cookTime: m.recipe.cookTime,
         calories: m.recipe.calories,
