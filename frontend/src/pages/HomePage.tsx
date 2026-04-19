@@ -34,7 +34,7 @@ export const HomePage = () => {
       }
     };
     loadIngredients();
-  }, [mealType, t];
+  }, [mealType, t]);
 
   const toggleIngredient = (name: string) => {
     setSelectedIngredients((prev) =>

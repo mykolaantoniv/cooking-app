@@ -1,6 +1,7 @@
 import { useState, useMemo } from "react";
 import { Ingredient } from "../types";
 import { Search, X } from "lucide-react";
+import { useLanguage } from "../hooks/LanguageContext";
 
 interface IngredientSelectorProps {
   availableIngredients: Ingredient[];
@@ -8,14 +9,16 @@ interface IngredientSelectorProps {
   onToggle: (name: string) => void;
 }
 
-const categoryEmojis: Record<string, string> = {
-  Dairy: "🥛",
-  Grains: "🍞",
-  Meat: "🍗",
-  Vegetables: "🥦",
-  Fruits: "🍎",
-  Spices: "🧂",
-  Other: "🍱",
+const getCategoryEmojis = (): Record<string, string> => {
+  return {
+    Dairy: "🥛",
+    Grains: "🍞",
+    Meat: "🍗",
+    Vegetables: "🥦",
+    Fruits: "🍎",
+    Spices: "🧂",
+    Other: "🍱",
+  };
 };
 
 const groupIngredients = (ingredients: Ingredient[]) => {
@@ -36,6 +39,7 @@ export const IngredientSelector = ({
   selected,
   onToggle,
 }: IngredientSelectorProps) => {
+  const { t } = useLanguage();
   const [search, setSearch] = useState("");
   const grouped = useMemo(
     () => groupIngredients(availableIngredients),
@@ -56,7 +60,8 @@ export const IngredientSelector = ({
   }, [grouped, search]);
 
   const getCategoryEmoji = (category: string) => {
-    return categoryEmojis[category] || "🍱";
+    const emojis = getCategoryEmojis();
+    return emojis[category] || "🍱";
   };
 
   return (
@@ -66,7 +71,7 @@ export const IngredientSelector = ({
         <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-muted-foreground" />
         <input
           type="text"
-          placeholder="Search ingredients..."
+          placeholder={t.search_ingredients}
           value={search}
           onChange={(e) => setSearch(e.target.value)}
           className="w-full pl-10 pr-3 py-3 glass-card text-sm focus:outline-none focus:ring-2 focus:ring-primary/50"
@@ -109,7 +114,7 @@ export const IngredientSelector = ({
           <div className="flex items-start justify-between gap-3">
             <div className="flex-1">
               <p className="text-xs font-bold text-muted-foreground uppercase tracking-wide mb-2">
-                Selected
+                {t.selected}
               </p>
               <div className="flex flex-wrap gap-2">
                 {selected.map((ing) => (

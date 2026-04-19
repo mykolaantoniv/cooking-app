@@ -20,6 +20,21 @@ export const en = {
   failed_to_find_recipes: "Failed to find recipes",
   no_recipes_found: "No recipes found for your selection",
   try_different_ingredients: "Try selecting different ingredients",
+  found_recipes: "Found",
+  recipes: "recipes",
+
+  // IngredientSelector
+  search_ingredients: "Search ingredients...",
+  selected: "Selected",
+  
+  // Categories
+  category_dairy: "Dairy",
+  category_grains: "Grains",
+  category_meat: "Meat",
+  category_vegetables: "Vegetables",
+  category_fruits: "Fruits",
+  category_spices: "Spices",
+  category_other: "Other",
 
   // RecipeCard
   perfect: "🔥 Perfect",

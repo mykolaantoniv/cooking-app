@@ -20,6 +20,21 @@ export const uk = {
   failed_to_find_recipes: "Помилка пошуку рецептів",
   no_recipes_found: "Рецепти не знайдені",
   try_different_ingredients: "Спробуйте вибрати інші інгредієнти",
+  found_recipes: "Знайдено",
+  recipes: "рецептів",
+
+  // IngredientSelector
+  search_ingredients: "Пошук інгредієнтів...",
+  selected: "Вибрані",
+  
+  // Categories
+  category_dairy: "Молочні продукти",
+  category_grains: "Крупи",
+  category_meat: "М'ясо",
+  category_vegetables: "Овочі",
+  category_fruits: "Фрукти",
+  category_spices: "Спеції",
+  category_other: "Інше",
 
   // RecipeCard
   perfect: "🔥 Ідеально",
