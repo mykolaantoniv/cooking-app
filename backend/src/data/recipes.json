@@ -1,0 +1,374 @@
+[
+  {
+    "id": "recipe-001",
+    "title": "Buttermilk Pancakes",
+    "mealType": "breakfast",
+    "cookTime": 20,
+    "calories": 280,
+    "protein": 8,
+    "fat": 6,
+    "carbs": 48,
+    "ingredients": [
+      { "name": "buttermilk", "amount": "200ml", "category": "Dairy" },
+      { "name": "eggs", "amount": "2", "category": "Eggs" },
+      { "name": "flour", "amount": "150g", "category": "Grains" },
+      { "name": "sugar", "amount": "20g", "category": "Dry Goods" },
+      { "name": "baking powder", "amount": "5g", "category": "Dry Goods" },
+      { "name": "butter", "amount": "30g", "category": "Dairy" },
+      { "name": "salt", "amount": "1g", "category": "Seasoning" }
+    ],
+    "steps": [
+      "Mix dry ingredients in a bowl",
+      "Combine wet ingredients separately",
+      "Mix wet and dry together",
+      "Cook on griddle until golden brown on both sides"
+    ]
+  },
+  {
+    "id": "recipe-002",
+    "title": "Simple Omelette",
+    "mealType": "breakfast",
+    "cookTime": 10,
+    "calories": 200,
+    "protein": 12,
+    "fat": 10,
+    "carbs": 2,
+    "ingredients": [
+      { "name": "eggs", "amount": "2", "category": "Eggs" },
+      { "name": "butter", "amount": "20g", "category": "Dairy" },
+      { "name": "cheese", "amount": "30g", "category": "Dairy" },
+      { "name": "salt", "amount": "1g", "category": "Seasoning" }
+    ],
+    "steps": [
+      "Beat eggs with salt",
+      "Heat butter in pan",
+      "Pour eggs into pan",
+      "Add cheese when partially set",
+      "Fold and serve"
+    ]
+  },
+  {
+    "id": "recipe-003",
+    "title": "Greek Salad",
+    "mealType": "lunch",
+    "cookTime": 10,
+    "calories": 150,
+    "protein": 5,
+    "fat": 8,
+    "carbs": 15,
+    "ingredients": [
+      { "name": "tomato", "amount": "200g", "category": "Vegetables" },
+      { "name": "cucumber", "amount": "150g", "category": "Vegetables" },
+      { "name": "feta cheese", "amount": "100g", "category": "Dairy" },
+      { "name": "olive oil", "amount": "30ml", "category": "Oils" },
+      { "name": "salt", "amount": "1g", "category": "Seasoning" },
+      { "name": "oregano", "amount": "2g", "category": "Seasoning" }
+    ],
+    "steps": [
+      "Chop tomato and cucumber",
+      "Crumble feta cheese",
+      "Mix vegetables and cheese",
+      "Drizzle with olive oil",
+      "Season with salt and oregano"
+    ]
+  },
+  {
+    "id": "recipe-004",
+    "title": "Grilled Chicken Breast",
+    "mealType": "lunch",
+    "cookTime": 25,
+    "calories": 280,
+    "protein": 40,
+    "fat": 4,
+    "carbs": 0,
+    "ingredients": [
+      { "name": "chicken breast", "amount": "200g", "category": "Meat" },
+      { "name": "olive oil", "amount": "10ml", "category": "Oils" },
+      { "name": "salt", "amount": "1g", "category": "Seasoning" },
+      { "name": "black pepper", "amount": "0.5g", "category": "Seasoning" },
+      { "name": "garlic", "amount": "2 cloves", "category": "Vegetables" }
+    ],
+    "steps": [
+      "Pound chicken breast to even thickness",
+      "Rub with oil, salt, pepper, and garlic",
+      "Grill for 6-8 minutes per side",
+      "Rest for 5 minutes before serving"
+    ]
+  },
+  {
+    "id": "recipe-005",
+    "title": "Pasta Carbonara",
+    "mealType": "lunch",
+    "cookTime": 15,
+    "calories": 350,
+    "protein": 18,
+    "fat": 12,
+    "carbs": 42,
+    "ingredients": [
+      { "name": "pasta", "amount": "200g", "category": "Grains" },
+      { "name": "bacon", "amount": "100g", "category": "Meat" },
+      { "name": "eggs", "amount": "3", "category": "Eggs" },
+      { "name": "parmesan", "amount": "50g", "category": "Dairy" },
+      { "name": "salt", "amount": "1g", "category": "Seasoning" },
+      { "name": "black pepper", "amount": "0.5g", "category": "Seasoning" }
+    ],
+    "steps": [
+      "Cook pasta according to package directions",
+      "Fry bacon until crispy",
+      "Beat eggs with grated parmesan",
+      "Mix hot pasta with bacon",
+      "Remove from heat and stir in egg mixture",
+      "Season with salt and pepper"
+    ]
+  },
+  {
+    "id": "recipe-006",
+    "title": "Vegetable Stir-Fry",
+    "mealType": "dinner",
+    "cookTime": 15,
+    "calories": 200,
+    "protein": 6,
+    "fat": 8,
+    "carbs": 25,
+    "ingredients": [
+      { "name": "broccoli", "amount": "200g", "category": "Vegetables" },
+      { "name": "bell pepper", "amount": "150g", "category": "Vegetables" },
+      { "name": "carrot", "amount": "100g", "category": "Vegetables" },
+      { "name": "soy sauce", "amount": "30ml", "category": "Condiments" },
+      { "name": "vegetable oil", "amount": "20ml", "category": "Oils" },
+      { "name": "garlic", "amount": "3 cloves", "category": "Vegetables" }
+    ],
+    "steps": [
+      "Cut vegetables into bite-sized pieces",
+      "Heat oil in a wok or large pan",
+      "Stir-fry vegetables for 5-7 minutes",
+      "Add soy sauce and garlic",
+      "Toss and cook for another 2-3 minutes"
+    ]
+  },
+  {
+    "id": "recipe-007",
+    "title": "Salmon with Lemon",
+    "mealType": "dinner",
+    "cookTime": 20,
+    "calories": 280,
+    "protein": 32,
+    "fat": 12,
+    "carbs": 2,
+    "ingredients": [
+      { "name": "salmon fillet", "amount": "200g", "category": "Fish" },
+      { "name": "lemon", "amount": "1", "category": "Fruits" },
+      { "name": "olive oil", "amount": "15ml", "category": "Oils" },
+      { "name": "salt", "amount": "1g", "category": "Seasoning" },
+      { "name": "thyme", "amount": "2g", "category": "Seasoning" }
+    ],
+    "steps": [
+      "Preheat oven to 180°C",
+      "Place salmon on baking sheet",
+      "Drizzle with olive oil",
+      "Squeeze lemon juice over salmon",
+      "Sprinkle salt and thyme",
+      "Bake for 12-15 minutes"
+    ]
+  },
+  {
+    "id": "recipe-008",
+    "title": "Beef Tacos",
+    "mealType": "dinner",
+    "cookTime": 20,
+    "calories": 320,
+    "protein": 24,
+    "fat": 14,
+    "carbs": 28,
+    "ingredients": [
+      { "name": "ground beef", "amount": "300g", "category": "Meat" },
+      { "name": "taco shells", "amount": "8", "category": "Grains" },
+      { "name": "tomato", "amount": "150g", "category": "Vegetables" },
+      { "name": "lettuce", "amount": "100g", "category": "Vegetables" },
+      { "name": "cheddar cheese", "amount": "80g", "category": "Dairy" },
+      { "name": "taco seasoning", "amount": "20g", "category": "Condiments" }
+    ],
+    "steps": [
+      "Brown ground beef in a pan",
+      "Add taco seasoning and cook for 2 minutes",
+      "Warm taco shells",
+      "Chop tomato and lettuce",
+      "Assemble tacos with beef, vegetables, and cheese"
+    ]
+  },
+  {
+    "id": "recipe-009",
+    "title": "Mushroom Risotto",
+    "mealType": "dinner",
+    "cookTime": 35,
+    "calories": 340,
+    "protein": 10,
+    "fat": 12,
+    "carbs": 48,
+    "ingredients": [
+      { "name": "arborio rice", "amount": "200g", "category": "Grains" },
+      { "name": "mushrooms", "amount": "200g", "category": "Vegetables" },
+      { "name": "vegetable broth", "amount": "800ml", "category": "Condiments" },
+      { "name": "onion", "amount": "1", "category": "Vegetables" },
+      { "name": "parmesan", "amount": "50g", "category": "Dairy" },
+      { "name": "butter", "amount": "30g", "category": "Dairy" },
+      { "name": "white wine", "amount": "100ml", "category": "Condiments" }
+    ],
+    "steps": [
+      "Sauté mushrooms and set aside",
+      "Sauté onion in butter",
+      "Add rice and toast for 2 minutes",
+      "Add wine and stir until absorbed",
+      "Gradually add broth, stirring constantly",
+      "Cook until rice is creamy, about 18-20 minutes",
+      "Stir in parmesan and mushrooms"
+    ]
+  },
+  {
+    "id": "recipe-010",
+    "title": "Caesar Salad",
+    "mealType": "lunch",
+    "cookTime": 10,
+    "calories": 180,
+    "protein": 8,
+    "fat": 10,
+    "carbs": 12,
+    "ingredients": [
+      { "name": "romaine lettuce", "amount": "200g", "category": "Vegetables" },
+      { "name": "parmesan", "amount": "40g", "category": "Dairy" },
+      { "name": "croutons", "amount": "50g", "category": "Grains" },
+      { "name": "caesar dressing", "amount": "60ml", "category": "Condiments" },
+      { "name": "salt", "amount": "1g", "category": "Seasoning" }
+    ],
+    "steps": [
+      "Wash and chop romaine lettuce",
+      "Toss with caesar dressing",
+      "Top with croutons and parmesan",
+      "Season with salt to taste"
+    ]
+  },
+  {
+    "id": "recipe-011",
+    "title": "Vegetable Soup",
+    "mealType": "lunch",
+    "cookTime": 30,
+    "calories": 120,
+    "protein": 4,
+    "fat": 3,
+    "carbs": 18,
+    "ingredients": [
+      { "name": "vegetable broth", "amount": "1000ml", "category": "Condiments" },
+      { "name": "carrot", "amount": "150g", "category": "Vegetables" },
+      { "name": "celery", "amount": "100g", "category": "Vegetables" },
+      { "name": "onion", "amount": "1", "category": "Vegetables" },
+      { "name": "tomato", "amount": "200g", "category": "Vegetables" },
+      { "name": "salt", "amount": "1g", "category": "Seasoning" }
+    ],
+    "steps": [
+      "Chop all vegetables",
+      "Sauté onion and celery",
+      "Add carrot and tomato",
+      "Pour in vegetable broth",
+      "Simmer for 20 minutes",
+      "Season with salt"
+    ]
+  },
+  {
+    "id": "recipe-012",
+    "title": "Scrambled Eggs with Toast",
+    "mealType": "breakfast",
+    "cookTime": 10,
+    "calories": 240,
+    "protein": 10,
+    "fat": 12,
+    "carbs": 20,
+    "ingredients": [
+      { "name": "eggs", "amount": "3", "category": "Eggs" },
+      { "name": "butter", "amount": "20g", "category": "Dairy" },
+      { "name": "bread", "amount": "2 slices", "category": "Grains" },
+      { "name": "salt", "amount": "1g", "category": "Seasoning" },
+      { "name": "black pepper", "amount": "0.5g", "category": "Seasoning" }
+    ],
+    "steps": [
+      "Beat eggs with salt and pepper",
+      "Melt butter in a pan",
+      "Pour eggs and scramble until cooked",
+      "Toast bread",
+      "Serve scrambled eggs with toast"
+    ]
+  },
+  {
+    "id": "recipe-013",
+    "title": "Chicken Curry",
+    "mealType": "dinner",
+    "cookTime": 40,
+    "calories": 320,
+    "protein": 28,
+    "fat": 10,
+    "carbs": 22,
+    "ingredients": [
+      { "name": "chicken breast", "amount": "300g", "category": "Meat" },
+      { "name": "coconut milk", "amount": "400ml", "category": "Condiments" },
+      { "name": "onion", "amount": "1", "category": "Vegetables" },
+      { "name": "garlic", "amount": "3 cloves", "category": "Vegetables" },
+      { "name": "curry powder", "amount": "20g", "category": "Seasoning" },
+      { "name": "vegetable oil", "amount": "20ml", "category": "Oils" }
+    ],
+    "steps": [
+      "Cut chicken into cubes",
+      "Sauté onion and garlic",
+      "Add curry powder and cook for 1 minute",
+      "Add chicken and brown",
+      "Pour in coconut milk",
+      "Simmer for 25-30 minutes"
+    ]
+  },
+  {
+    "id": "recipe-014",
+    "title": "Fruit Smoothie",
+    "mealType": "breakfast",
+    "cookTime": 5,
+    "calories": 150,
+    "protein": 5,
+    "fat": 2,
+    "carbs": 32,
+    "ingredients": [
+      { "name": "banana", "amount": "1", "category": "Fruits" },
+      { "name": "strawberries", "amount": "100g", "category": "Fruits" },
+      { "name": "yogurt", "amount": "150g", "category": "Dairy" },
+      { "name": "milk", "amount": "200ml", "category": "Dairy" },
+      { "name": "honey", "amount": "15g", "category": "Dry Goods" }
+    ],
+    "steps": [
+      "Add all ingredients to blender",
+      "Blend until smooth",
+      "Pour into glass and serve"
+    ]
+  },
+  {
+    "id": "recipe-015",
+    "title": "Beef Bolognese",
+    "mealType": "dinner",
+    "cookTime": 45,
+    "calories": 380,
+    "protein": 28,
+    "fat": 14,
+    "carbs": 38,
+    "ingredients": [
+      { "name": "ground beef", "amount": "300g", "category": "Meat" },
+      { "name": "pasta", "amount": "200g", "category": "Grains" },
+      { "name": "tomato sauce", "amount": "400ml", "category": "Condiments" },
+      { "name": "onion", "amount": "1", "category": "Vegetables" },
+      { "name": "garlic", "amount": "2 cloves", "category": "Vegetables" },
+      { "name": "parmesan", "amount": "50g", "category": "Dairy" }
+    ],
+    "steps": [
+      "Brown ground beef",
+      "Sauté onion and garlic",
+      "Add tomato sauce and simmer for 20 minutes",
+      "Cook pasta according to package directions",
+      "Mix pasta with sauce",
+      "Top with parmesan"
+    ]
+  }
+]
